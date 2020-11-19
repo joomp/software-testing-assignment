@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "c8 --all --include src/*.js mocha",
-    "coverage": "c8 report --reporter=text-lcov | coveralls"
+    "coverage": "c8 report --reporter=text-lcov | coveralls",
+    "testtest": "c8 report --all --include src/*.js"
   },
   "author": "",
   "license": "MIT",
