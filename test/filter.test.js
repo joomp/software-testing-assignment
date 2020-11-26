@@ -28,4 +28,10 @@ describe("filter", () => {
     expect(filter(arr, predicative)).to.be.empty;
   });
 
+  describe('when input array is null', () => {
+    it('returns a new array', () => {
+      const predicative = (value, index, array) => true;
+      expect(filter(null, predicative)).to.be.an('array');
+    });
+  });
 });
